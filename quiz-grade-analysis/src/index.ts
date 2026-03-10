@@ -21,7 +21,8 @@ async function main() {
   const csvContent = await fs.readFile(csvPath, "utf-8");
 
   const prompt = `
-    You are administering Moodle quiz in your Moodle website. Generate a report where it should contain the maximum points, the passing score is 70% of the maximum points, the students with highest score (name format: First name + Last name), the number of students who pass the quiz, the number of students who fail the quiz (below 70% score), the number of students of students who did not take the quiz, and the group average. Fromat the results in json string.
+    You are administering Moodle quiz in your Moodle website. Generate a report in json format.
+    The contain the maximum points, the passing score is 70% of the maximum points, the last name of students with highest score, the number of students who pass the quiz, the number of students who fail the quiz (below 70% score), the number of students of students who did not take the quiz, and the group average. The students that have a blank grade is considered failed and did not took the quiz.
 
     Here is the csv content of the quiz grades:
     ${csvContent}
