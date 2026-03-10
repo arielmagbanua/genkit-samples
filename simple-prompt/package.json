@@ -1,8 +1,8 @@
 {
-  "name": "quiz-grade-analysis",
+  "name": "simple-prompt",
   "version": "1.0.0",
-  "description": "```shell export GEMINI_API_KEY=<yourkey>",
-  "main": "src/index.ts",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "npx tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
