@@ -1,0 +1,23 @@
+{
+  "name": "quiz-grade-analysis-schema",
+  "version": "1.0.0",
+  "description": "```shell export GEMINI_API_KEY=<yourkey>",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "npx tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@genkit-ai/google-genai": "^1.29.0",
+    "dotenv": "^17.3.1",
+    "genkit": "^1.29.0"
+  }
+}
